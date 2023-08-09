@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+h1 {
+  font-size: 120px;
+  animation: fadeIn 2s;
+}
+
+h2 {
+  font-size: 70px;
+  transform: translateY(100%);
+  animation: fadeIn 3s, slide-up 1s forwards;
+
+}
+
+@keyframes slide-up {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.Github{
+  width: 250px;
+  height: 250px;
+  border: none;
+  background-image: url('C:\Users\prana\Downloads\GitHub-Mark.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+  

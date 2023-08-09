@@ -1,0 +1,7 @@
+Src/mainapp.py
+Src/__pycache__/answers_predict.cpython-36.pyc
+main.py
+SQuAD_train.py
+test.py
+.idea/
+raptorweb/node_modules/
