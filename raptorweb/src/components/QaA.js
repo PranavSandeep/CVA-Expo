@@ -26,31 +26,33 @@ const QuestionAnswerApp = () => {
     };
 
     return (
-        <div>
-            <h1>Question Answer App</h1>
+    <div>
+      <h1 className="app-title">Raptor</h1>
+      {/* ... */}
+      <div className="input-container">
+          <label className="input-label">
+            <h2>Context</h2>
+          <textarea className="input-field" value={context} onChange={handleContextChange} />
+        </label>
+      </div>
+      <div className="input-container">
+          <label className="input-label">
+          <h2>Question</h2>
+          <input className="input-field" type="text" value={question} onChange={handleQuestionChange} />
+        </label>
+      </div>
+      <div>
+        <button className="button" onClick={handleAnswerRequest}>Get Answer</button>
+      </div>
+        {answer && (
             <div>
-                <label>
-                    Context:
-                    <textarea value={context} onChange={handleContextChange} />
-                </label>
+                <h2>Answer:</h2>
+                <p>{answer}</p>
             </div>
-            <div>
-                <label>
-                    Question:
-                    <input type="text" value={question} onChange={handleQuestionChange} />
-                </label>
-            </div>
-            <div>
-                <button onClick={handleAnswerRequest}>Get Answer</button>
-            </div>
-            {answer && (
-                <div>
-                    <h2>Answer:</h2>
-                    <p>{answer}</p>
-                </div>
-                )}
-        </div>
-        );
+            )}
+      {/* ... */}
+    </div>
+    );
 };
 
 export default QuestionAnswerApp;
